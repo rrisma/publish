@@ -140,8 +140,14 @@
         justify-content: space-between;
         .showcase {
             width: 50%;
+            .text {
+                color: $color-2;
+            }
         }
         .contact {
+            .text {
+                color: $color-2;
+            }
         }
         .icon {
             display: flex;
