@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Concert+One&family=Poppins");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.container {
+  padding: 22px 32px;
+}
+
+.container .header-nav {
+  margin-bottom: 64px;
+}
+
+.container .header-nav .item {
+  display: flex;
+  margin: -22px;
+  text-transform: uppercase;
+}
+
+.container .header-nav .item .items {
+  padding: 22px;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+.container .header-nav .item .items a {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+.container .header-nav .item .items.active {
+  position: relative;
+  font-weight: 600;
+}
+
+.container .header-nav .item .items.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-bottom: 2px solid #5f5f5f;
+  width: 28px;
+  left: 22px;
+  border-radius: 10px;
+  animation: borderline .2s linear;
+}
+
+@keyframes borderline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 28px;
+  }
+}
+
+.container .header-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .header-about-title {
+  width: 50%;
+}
+
+.container .header-about-title .text {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.container .header-about-title .text-title .name {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+
+.container .header-about-title .text-title .dev {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+
+.container .header-about-title .text-title .text {
+  color: #a3a3a3;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container .header-about-title .button {
+  margin-top: 28px;
+}
+
+.container .header-about-title .button-line {
+  margin: 0 18px 0 0;
+  border: 2px solid #5f5f5f;
+  padding: 6px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #484848;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container .header-about-img {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.container .header-about-img .line {
+  border-radius: 50%;
+}
+
+.container .header-about-img .line.line-1 {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #a3a3a3;
+  position: absolute;
+  top: -23px;
+  left: 25.5%;
+}
+
+.container .header-about-img .line.line-2 {
+  border: 2px solid #a3a3a3;
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: -55px;
+  left: 19.5%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: rotate 2s ease-in-out alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container .header-about-img img {
+  max-width: 100%;
+}
+
+.container .header-about-img .images {
+  animation: rotates ease 5s;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes rotates {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container .header-foot {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header-foot .showcase {
+  width: 50%;
+}
+
+.container .header-foot .icon {
+  display: flex;
+  padding: 6px 12px 0 0;
+}
+
+.container .header-foot .icon .images {
+  width: 20%;
+  margin: 6px 12px 0 0;
+  background-color: #5f5f5f;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=main.css.map */

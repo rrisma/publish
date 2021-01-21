@@ -1,0 +1,161 @@
+.container {
+    padding: 22px 32px;
+    .header-nav {
+        margin-bottom: 64px;
+        .item {
+            display: flex;
+            margin: -22px;
+            text-transform: uppercase;
+            .items {
+                padding: 22px;
+                padding-bottom: 5px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color : $color-1
+
+                }
+                &.active {
+                    position: relative;
+                    font-weight: 600;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        border-bottom: 2px solid $color-1;
+                        width: 28px;
+                        left: 22px;
+                        border-radius: 10px;
+                        animation: borderline .2s linear;
+                    }
+                    @keyframes borderline {
+                        0%   {  
+                            width: 0;     
+                        }
+                        100% {  
+                            width: 28px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-title {
+            width: 50%;
+            .text {
+                text-transform: uppercase;
+                font-size: $font-3;
+            }
+            .text-title {
+                .name {
+                    font-size: $font-08;
+                    text-transform: uppercase;
+                    color: $color-1;
+                }
+                .dev {
+                    font-size: $font-08;
+                    text-transform: uppercase;
+                    color: $color-1;
+                }
+                .text {
+                    color: $color-2;
+                    font-size: $font-03;
+                    text-transform: capitalize;
+                }
+            }
+            .button {
+                margin-top: 28px;
+                &-line {
+                    margin: 0 18px 0 0;
+                    border: 2px solid $color-1;
+                    padding: 6px 20px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color :$color-4;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+        &-img {
+            width: 50%;
+            text-align: center;
+            position: relative;
+            .line {
+                border-radius: 50%;
+                
+                &.line-1 {
+                    width: 300px;
+                    height: 300px;
+                    border: 2px solid $color-2;
+                    position: absolute;
+                    top: -23px;
+                    left: 25.5%;
+                }
+                &.line-2 {
+                    border: 2px solid $color-2;
+                    width: 380px;
+                    height: 380px;
+                    position: absolute;
+                    top: -55px;
+                    left: 19.5%;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                    animation: rotate 2s ease-in-out alternate;
+                }
+                @keyframes rotate {
+                    0%   { 
+                        transform: rotate(0);      
+                    }
+                    100% { 
+                        transform: rotate(360deg); 
+                    }
+                }
+            }
+            .image {
+            }
+            img{
+                max-width: 100%;
+            }
+            .images{
+                animation: rotates ease 5s ;
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            @keyframes rotates {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+            }
+        }
+    .header-foot {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        .showcase {
+            width: 50%;
+        }
+        .contact {
+        }
+        .icon {
+            display: flex;
+            padding: 6px 12px 0 0;
+            .images {
+                width: 20%;
+                margin: 6px 12px 0 0;
+                background-color: $color-1;
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+
+            }
+        }
+    }
+
+}
